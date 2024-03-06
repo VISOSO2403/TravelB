@@ -43,6 +43,8 @@
 		5DCACB8F33CDC322A6C60F78 /* libPods-TravelB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TravelB.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = TravelB/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-TravelB-TravelBTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TravelB-TravelBTests.release.xcconfig"; path = "Target Support Files/Pods-TravelB-TravelBTests/Pods-TravelB-TravelBTests.release.xcconfig"; sourceTree = "<group>"; };
+		93DBCFD32B9809B600702846 /* EvilIcons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = EvilIcons.ttf; path = "../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
+		93DBCFD42B9809C100702846 /* Ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Ionicons.ttf; path = "../../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -116,6 +118,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				93DBCFD22B9809A100702846 /* Fonts */,
 				13B07FAE1A68108700A75B9A /* TravelB */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* TravelBTests */,
@@ -135,6 +138,15 @@
 				00E356EE1AD99517003FC87E /* TravelBTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		93DBCFD22B9809A100702846 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				93DBCFD42B9809C100702846 /* Ionicons.ttf */,
+				93DBCFD32B9809B600702846 /* EvilIcons.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
