@@ -1,5 +1,5 @@
-import {View, Text, Platform} from 'react-native';
-import React from 'react';
+import {View, Text, Platform, StyleSheet} from 'react-native';
+import React, {useContext} from 'react';
 
 import {
   BottomTabNavigationOptions,
@@ -11,10 +11,14 @@ import {
   RecordScreen,
   SettingsScreen,
 } from '../screens';
+import {TextComponent} from '../components';
+import {ThemeContext} from '../context/ThemeContext';
 
 const UserTab = createBottomTabNavigator();
 
 export const UserBottomNavigation = () => {
+  const {colors} = useContext(ThemeContext);
+
   const bottomScreenOptions: BottomTabNavigationOptions = {
     tabBarShowLabel: false,
     headerShown: false,
@@ -25,7 +29,7 @@ export const UserBottomNavigation = () => {
       right: 0,
       elevation: 0,
       height: Platform.OS === 'ios' ? 90 : 60,
-      backgroundColor: 'red', //colors.primary,
+      backgroundColor: colors.primary,
     },
   };
 
@@ -145,3 +149,10 @@ export const UserBottomNavigation = () => {
     </UserTab.Navigator>
   );
 };
+
+export const styles = StyleSheet.create({
+  iconContainer: {
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+});

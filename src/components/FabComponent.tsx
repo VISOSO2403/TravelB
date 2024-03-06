@@ -1,7 +1,7 @@
 import {StyleProp, ViewStyle, TouchableOpacity, StyleSheet} from 'react-native';
 import React, {useContext} from 'react';
 import {IconComponent} from '.';
-import {ThemeContext} from '../context/theme/ThemeContext';
+import {ThemeContext} from '../context/ThemeContext';
 
 interface Props {
   iconName: string;

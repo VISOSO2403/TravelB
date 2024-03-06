@@ -1,6 +1,6 @@
 import {View, Text, StyleProp, TextStyle} from 'react-native';
 import React, {useContext} from 'react';
-import {ThemeContext} from '../context/theme/ThemeContext';
+import {ThemeContext} from '../context/ThemeContext';
 
 interface Props {
   text: string | any;
