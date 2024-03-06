@@ -33,7 +33,7 @@ const AuthStackNavigation = () => {
       <AuthStack.Screen name="Register" component={RegisterScreen} />
       <AuthStack.Screen name="Forgot" component={ForgotScreen} />
       <AuthStack.Screen name="Terms" component={TermsScreen} />
-      {/* <AuthStack.Screen name="Inicio" component={UserBottomNavigation} /> */}
+      <AuthStack.Screen name="Inicio" component={UserBottomNavigation} />
     </AuthStack.Navigator>
   );
 };

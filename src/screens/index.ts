@@ -11,7 +11,6 @@ export {
   LoginScreen,
   RegisterScreen,
   ForgotScreen,
-
   HomeScreen,
   WalletScreen,
   TermsScreen,

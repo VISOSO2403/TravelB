@@ -1,6 +1,5 @@
 import {StyleSheet, View} from 'react-native';
 import React, {useEffect} from 'react';
-import {LoadingComponent, TextComponent} from '../components';
 import {
   Camera,
   Code,
@@ -8,6 +7,8 @@ import {
   useCameraPermission,
   useCodeScanner,
 } from 'react-native-vision-camera';
+
+import {LoadingComponent, TextComponent} from '../components';
 
 const CameraScreen = () => {
   const {hasPermission, requestPermission} = useCameraPermission();
@@ -31,7 +32,11 @@ const CameraScreen = () => {
     }
   };
   if (devices == null) {
-    return <LoadingComponent size={30} />;
+    return (
+      <View>
+        <TextComponent text="Cámara no encontrada" font="bold" />
+      </View>
+    );
   }
 
   return (

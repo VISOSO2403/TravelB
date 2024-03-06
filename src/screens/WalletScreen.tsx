@@ -4,7 +4,6 @@ import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
 import {
   ContainerComponent,
-  FabComponent,
   IconComponent,
   RowComponent,
   SectionComponent,

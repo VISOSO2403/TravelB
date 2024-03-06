@@ -10,8 +10,9 @@ import {
   HomeScreen,
   RecordScreen,
   SettingsScreen,
+  WalletScreen,
 } from '../screens';
-import {TextComponent} from '../components';
+import {IconComponent, TextComponent} from '../components';
 import {ThemeContext} from '../context/ThemeContext';
 
 const UserTab = createBottomTabNavigator();
