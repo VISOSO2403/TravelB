@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import {
   StackNavigationOptions,
   createStackNavigator,
@@ -11,14 +11,17 @@ import {
   TermsScreen,
 } from '../screens';
 import {UserBottomNavigation} from './UserBottomNavigation';
+import {ThemeContext} from '../context/ThemeContext';
 
 const AuthStack = createStackNavigator();
 
 const AuthStackNavigation = () => {
+  const {colors} = useContext(ThemeContext);
+
   const stackScreenOptions: StackNavigationOptions = {
     headerShown: false,
     cardStyle: {
-      backgroundColor: 'red', //colors.background,
+      backgroundColor: colors.background,
     },
   };
 

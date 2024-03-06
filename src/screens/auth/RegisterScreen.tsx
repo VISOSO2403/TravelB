@@ -2,6 +2,10 @@ import {View, Text, TouchableOpacity, Platform} from 'react-native';
 import React, {useContext} from 'react';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
+import {useNavigation} from '@react-navigation/native';
+import {ThemeContext} from '../../context/ThemeContext';
+import {globalStyles} from '../../theme/globalStyles';
+
 import {
   ContainerComponent,
   FabComponent,
@@ -12,9 +16,6 @@ import {
   SectionComponent,
   TextComponent,
 } from '../../components';
-import {globalStyles} from '../../theme/globalTheme';
-import {useNavigation} from '@react-navigation/native';
-import {ThemeContext} from '../../context/theme/ThemeContext';
 
 const RegisterScreen = () => {
   const navigation = useNavigation();

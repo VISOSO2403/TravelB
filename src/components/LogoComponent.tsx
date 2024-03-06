@@ -3,7 +3,6 @@ import React, {useContext} from 'react';
 
 import ContainerComponent from './ContainerComponent';
 import TextComponent from './TextComponent';
-import {ThemeContext} from '../context/theme/ThemeContext';
 
 const LogoComponent = () => {
   const logo = require('../assets/travel.webp');

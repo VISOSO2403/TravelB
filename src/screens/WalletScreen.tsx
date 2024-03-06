@@ -1,6 +1,7 @@
 import {View, Text, Platform} from 'react-native';
 import React, {useContext} from 'react';
-import {globalStyles} from '../theme/globalTheme';
+import {useSafeAreaInsets} from 'react-native-safe-area-context';
+
 import {
   ContainerComponent,
   FabComponent,
@@ -9,8 +10,8 @@ import {
   SectionComponent,
   TextComponent,
 } from '../components';
-import {useSafeAreaInsets} from 'react-native-safe-area-context';
-import {ThemeContext} from '../context/theme/ThemeContext';
+import {ThemeContext} from '../context/ThemeContext';
+import {globalStyles} from '../theme/globalStyles';
 
 const WalletScreen = () => {
   const {top} = useSafeAreaInsets();

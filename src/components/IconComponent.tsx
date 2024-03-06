@@ -2,7 +2,7 @@ import {View, Text, StyleProp, ViewStyle} from 'react-native';
 import React, {useContext} from 'react';
 
 import IonIcon from 'react-native-vector-icons/Ionicons';
-import {ThemeContext} from '../context/theme/ThemeContext';
+import {ThemeContext} from '../context/ThemeContext';
 
 interface Props {
   name: any;
