@@ -7,6 +7,7 @@ import LogoComponent from './LogoComponent';
 import FabComponent from './FabComponent';
 import IconComponent from './IconComponent';
 import LoadingComponent from './LoadingComponent';
+import RequestPermission from './RequestPermission';
 export {
   ContainerComponent,
   InputComponent,
@@ -16,5 +17,6 @@ export {
   LogoComponent,
   FabComponent,
   IconComponent,
-  LoadingComponent
+  LoadingComponent,
+  RequestPermission
 }
