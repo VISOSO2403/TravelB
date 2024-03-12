@@ -8,6 +8,7 @@ import FabComponent from './FabComponent';
 import IconComponent from './IconComponent';
 import LoadingComponent from './LoadingComponent';
 import RequestPermission from './RequestPermission';
+import MapComponent from './MapComponent';
 export {
   ContainerComponent,
   InputComponent,
@@ -18,5 +19,6 @@ export {
   FabComponent,
   IconComponent,
   LoadingComponent,
-  RequestPermission
+  RequestPermission,
+  MapComponent
 }

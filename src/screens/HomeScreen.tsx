@@ -1,25 +1,34 @@
-import {View, Text, StyleSheet} from 'react-native';
-import React from 'react';
-import {usePermissionStore} from '../hooks/usePermissionStore';
-import {RequestPermission, TextComponent} from '../components';
+import {View, StyleSheet} from 'react-native';
+import React, {useEffect, useState} from 'react';
+import {LoadingComponent, MapComponent} from '../components';
+import {Location} from '../interfaces/location';
+import {useLocationStore} from '../hooks/useLocationStore';
 
 const HomeScreen = () => {
-  const {locationsStatus, requestLocationPermission} = usePermissionStore();
+  const {lastKnownLocation, getLocation} = useLocationStore();
 
-  // if (locationsStatus != 'granted') {
-  //   <RequestPermission />;
-  // }
+  useEffect(() => {
+    if (lastKnownLocation === null) {
+      getLocation();
+    }
+  }, []);
+
+  if (lastKnownLocation === null) {
+    return <LoadingComponent size={40} />;
+  }
+
   return (
     <View style={styles.container}>
-      <TextComponent text="Necesitamos los permisos de ubicación para mostrar el mapa" />
+      <MapComponent initialLocation={lastKnownLocation} />
     </View>
   );
 };
 
-export const styles = StyleSheet.create({
+const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    justifyContent: 'center',
+    ...StyleSheet.absoluteFillObject,
+
+    justifyContent: 'flex-end',
     alignItems: 'center',
   },
 });
