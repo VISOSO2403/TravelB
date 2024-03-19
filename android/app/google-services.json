@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "757409458818",
+    "project_id": "travel-b-5be48",
+    "storage_bucket": "travel-b-5be48.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:757409458818:android:6e31545d5d8a59a45fa29b",
+        "android_client_info": {
+          "package_name": "com.travelb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "757409458818-qpgcrq76r8kqs402ttf52do6ib3buaal.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA5mhTb3_cI4kOjgrojaXdEMDSou1g6DFk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "757409458818-qpgcrq76r8kqs402ttf52do6ib3buaal.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "757409458818-9e8a776mm9o1docb2s67m8tiljjtmvm8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.visosodev.TravelB"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

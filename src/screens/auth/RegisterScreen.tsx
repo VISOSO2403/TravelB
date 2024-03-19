@@ -1,10 +1,12 @@
-import {View, Text, TouchableOpacity, Platform} from 'react-native';
+import {View, Text, TouchableOpacity, Platform, Alert} from 'react-native';
 import React, {useContext} from 'react';
 import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
 import {useNavigation} from '@react-navigation/native';
 import {ThemeContext} from '../../context/ThemeContext';
 import {globalStyles} from '../../theme/globalStyles';
+
+import auth from '@react-native-firebase/auth';
 
 import {
   ContainerComponent,
@@ -22,6 +24,18 @@ const RegisterScreen = () => {
   const {top} = useSafeAreaInsets();
 
   const {colors} = useContext(ThemeContext);
+
+  const RegisterFunction = () => {
+    auth().createUserWithEmailAndPassword('test@gmail.com', '123456789')
+  .then(() => {
+    console.log('User account created & signed in!');
+    Alert.alert('User account created & signed in!');
+  })
+  .catch(error => {
+    console.error(error);
+    Alert.alert('Error', error);
+  });
+  }
 
   return (
     <View style={{flex: 1}}>
@@ -76,6 +90,13 @@ const RegisterScreen = () => {
               color={colors.buttonTextColor}
             />
           </RowComponent>
+
+          <TouchableOpacity onPress={RegisterFunction}>
+            <Text>
+              regprueba
+            </Text>
+          </TouchableOpacity>
+
         </SectionComponent>
 
         <SectionComponent>
