@@ -8,6 +8,7 @@ import {
 import {
   CameraScreen,
   HomeScreen,
+  PerfilScreen,
   RecordScreen,
   SettingsScreen,
   WalletScreen,
@@ -128,7 +129,7 @@ export const UserBottomNavigation = () => {
       />
       <UserTab.Screen
         name="Settings"
-        component={SettingsScreen}
+        component={PerfilScreen}
         options={{
           tabBarIcon: ({focused}) => {
             return (
@@ -139,7 +140,7 @@ export const UserBottomNavigation = () => {
                   color={focused ? colors.textLinks : colors.buttonTextColor}
                 />
                 <TextComponent
-                  text="Ajustes"
+                  text="Perfil"
                   color={focused ? colors.textLinks : colors.buttonTextColor}
                 />
               </View>

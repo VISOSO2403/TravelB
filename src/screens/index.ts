@@ -7,6 +7,7 @@ import TermsScreen from './TermsScreen';
 import SettingsScreen from './SettingsScreen';
 import RecordScreen from './RecordScreen';
 import CameraScreen from './CameraScreen';
+import PerfilScreen from './PerfilScreen';
 export {
   LoginScreen,
   RegisterScreen,
@@ -17,4 +18,5 @@ export {
   SettingsScreen,
   RecordScreen,
   CameraScreen,
+  PerfilScreen
 }

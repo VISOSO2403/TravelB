@@ -1,7 +1,6 @@
 import {View, StyleSheet} from 'react-native';
 import React, {useEffect, useState} from 'react';
 import {LoadingComponent, MapComponent} from '../components';
-import {Location} from '../interfaces/location';
 import {useLocationStore} from '../hooks/useLocationStore';
 
 const HomeScreen = () => {
