@@ -24,7 +24,7 @@ const PerfilScreen = () => {
 
   return (
     <ContainerComponent isScroll>
-      <View style={Platform.OS === 'ios' ? {top: top + 15} : {}}>
+      <View style={Platform.OS === 'ios' ? {top: top + 15} : {top: top + 20}}>
         <SectionComponent
           styles={[
             styles.sections,
@@ -38,10 +38,14 @@ const PerfilScreen = () => {
                 text="Oliver Gabriel Visoso Flores"
                 font="bold"
                 size={20}
+                color={colors.buttonTextColor}
                 styles={{marginVertical: 16}}
               />
             </TouchableOpacity>
-            <TextComponent text="Manzanillo, Colima" />
+            <TextComponent
+              text="Manzanillo, Colima"
+              color={colors.buttonTextColor}
+            />
           </SectionComponent>
         </SectionComponent>
 
@@ -53,9 +57,16 @@ const PerfilScreen = () => {
           ]}>
           <TouchableOpacity
             style={[styles.buttons, {backgroundColor: colors.primary}]}>
-            <TextComponent text="Correo" font="bold" />
+            <TextComponent
+              text="Correo"
+              font="bold"
+              color={colors.buttonTextColor}
+            />
             <RowComponent>
-              <TextComponent text="ovi****@gmail.com" />
+              <TextComponent
+                text="ovi****@gmail.com"
+                color={colors.buttonTextColor}
+              />
               <IconComponent
                 name="chevron-forward"
                 color={colors.buttonTextColor}
@@ -66,9 +77,13 @@ const PerfilScreen = () => {
 
           <TouchableOpacity
             style={[styles.buttons, {backgroundColor: colors.primary}]}>
-            <TextComponent text="Teléfono" font="bold" />
+            <TextComponent
+              text="Teléfono"
+              font="bold"
+              color={colors.buttonTextColor}
+            />
             <RowComponent>
-              <TextComponent text="ovi****@gmail.com" />
+              <TextComponent text="314243561" color={colors.buttonTextColor} />
               <IconComponent
                 name="chevron-forward"
                 color={colors.buttonTextColor}
@@ -79,9 +94,13 @@ const PerfilScreen = () => {
 
           <TouchableOpacity
             style={[styles.buttons, {backgroundColor: colors.primary}]}>
-            <TextComponent text="Correo" font="bold" />
+            <TextComponent
+              text="Contraseña"
+              font="bold"
+              color={colors.buttonTextColor}
+            />
             <RowComponent>
-              <TextComponent text="ovi****@gmail.com" />
+              <TextComponent text="ovi****" color={colors.buttonTextColor} />
               <IconComponent
                 name="chevron-forward"
                 color={colors.buttonTextColor}
