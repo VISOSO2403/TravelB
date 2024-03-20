@@ -1,4 +1,4 @@
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, Platform} from 'react-native';
 import React from 'react';
 import {
   TextComponent,
@@ -7,19 +7,20 @@ import {
   FabComponent,
 } from '../components';
 import {useNavigation} from '@react-navigation/native';
+import {useSafeAreaInsets} from 'react-native-safe-area-context';
 
 const TermsScreen = () => {
   const navigation = useNavigation();
+  const {top} = useSafeAreaInsets();
 
   return (
-    <View style={{flex: 1}}>
+    <ContainerComponent isScroll>
       <FabComponent
         iconName="arrow-back"
-        styles={{top: 20, left: 16}}
+        styles={Platform.OS === 'ios' ? {top: 50} : {top: 20}}
         onPress={navigation.goBack}
       />
-
-      <ContainerComponent isScroll>
+      <View style={Platform.OS === 'ios' ? {top: top + 10} : {top: top + 20}}>
         <View style={{top: 30, alignItems: 'center'}}>
           <TextComponent text="Términos y condiciones" size={22} font="bold" />
         </View>
@@ -149,8 +150,8 @@ const TermsScreen = () => {
 
           <View style={{height: 100}} />
         </SectionComponent>
-      </ContainerComponent>
-    </View>
+      </View>
+    </ContainerComponent>
   );
 };
 
