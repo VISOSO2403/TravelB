@@ -60,6 +60,7 @@ const LoginScreen = () => {
 
         <SectionComponent>
           <RowComponent
+            isCenter
             styles={{...globalStyles.buttons, backgroundColor: colors.primary}}
             onPress={() => navigation.navigate('Inicio')}>
             <TextComponent text="Ingresar" size={20} font="bold" />
