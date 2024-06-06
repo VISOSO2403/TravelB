@@ -1,12 +1,12 @@
 import React from 'react';
-import {SafeAreaView, StyleSheet} from 'react-native';
-import {SignInScreen} from './app/screens';
+import {SafeAreaView, StyleSheet, View} from 'react-native';
+import {SignInScreen} from './src/screens';
 
 function App(): React.JSX.Element {
   return (
-    <SafeAreaView>
+    <View style={{flex: 1}}>
       <SignInScreen />
-    </SafeAreaView>
+    </View>
   );
 }
 
