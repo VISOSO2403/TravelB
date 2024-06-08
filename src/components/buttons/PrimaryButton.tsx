@@ -1,6 +1,6 @@
 import {View, Text, Pressable, TouchableOpacity} from 'react-native';
 import React from 'react';
-import {globalStyle} from '../../theme/globalTheme';
+import {globalStyle} from '../../theme/global.styles';
 import type {Button} from './Interfaces';
 import {stylesButton} from './styles';
 
