@@ -1,32 +1,17 @@
 import React from 'react';
-import {SafeAreaView, StyleSheet, View} from 'react-native';
+import {View} from 'react-native';
 import {SignInScreen} from './src/screens';
+
+import {PaperProvider} from 'react-native-paper';
 
 function App(): React.JSX.Element {
   return (
-    <View style={{flex: 1}}>
-      <SignInScreen />
-    </View>
+    <PaperProvider>
+      <View style={{flex: 1}}>
+        <SignInScreen />
+      </View>
+    </PaperProvider>
   );
 }
-
-const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-});
 
 export default App;

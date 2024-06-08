@@ -1,8 +1,9 @@
 import ScreenContainer from "./containers/ScreenContainer"
 import SectionContainer from "./containers/SectionContainer"
 import PrimaryButton from "./buttons/PrimaryButton"
-import LogoComponent from "./LogoComponent"
-import TextComponent from "./TextComponent"
+import LogoComponent from "./shared/LogoComponent"
+import TextComponent from "./shared/TextComponent"
+import InputComponent from "./shared/InputComponent"
 
 export {
   ScreenContainer,
@@ -10,4 +11,5 @@ export {
   PrimaryButton,
   LogoComponent,
   TextComponent,
+  InputComponent,
 }

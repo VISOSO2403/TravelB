@@ -1,9 +1,9 @@
-import {View, Text, Image, StyleSheet} from 'react-native';
+import {Image, StyleSheet} from 'react-native';
 import React from 'react';
-import SectionContainer from './containers/SectionContainer';
+import SectionContainer from '../containers/SectionContainer';
 
 const LogoComponent = () => {
-  const logo = require('../assets/img/travel.webp');
+  const logo = require('../../assets/img/travel.webp');
 
   return (
     <SectionContainer styles={styles.container}>
