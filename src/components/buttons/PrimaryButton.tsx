@@ -1,6 +1,5 @@
 import {View, Text, Pressable, TouchableOpacity} from 'react-native';
 import React from 'react';
-import {globalStyle} from '../../theme/global.styles';
 import type {Button} from './Interfaces';
 import {stylesButton} from './styles';
 
@@ -9,9 +8,9 @@ const PrimaryButton = (props: Button) => {
 
   return (
     <TouchableOpacity
+      onPress={onPress}
       activeOpacity={0.8}
-      style={[globalStyle.shadow, stylesButton.primaryButton, styles]}
-      onPress={() => {}}>
+      style={[stylesButton.primaryButton, stylesButton.shadow, styles]}>
       {children}
     </TouchableOpacity>
   );
