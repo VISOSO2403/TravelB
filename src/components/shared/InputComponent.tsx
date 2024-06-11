@@ -4,6 +4,7 @@ import {
   StyleSheet,
   View,
   TouchableOpacity,
+  TextInputProps,
 } from 'react-native';
 import React, {useRef, useState} from 'react';
 import type {CustomInputProps} from './interfaces';
@@ -12,8 +13,9 @@ import TextComponent from './TextComponent';
 const InputComponent = ({
   onChangeText,
   placeholder,
+  message,
   ...props
-}: CustomInputProps) => {
+}: CustomInputProps & TextInputProps) => {
   const [isFocused, setIsFocused] = useState(false);
   const [text, setText] = useState('');
   const [showPassword, setShowPassword] = useState(props.secureTextEntry);
@@ -73,7 +75,8 @@ const InputComponent = ({
         styles.innerContainer,
         isFocused && {borderColor: '#63519f', borderWidth: 2},
       ]}>
-      <Animated.Text style={[styles.label, labelStyle]}>
+      <Animated.Text
+        style={[styles.label, labelStyle, message ? {color: 'red '} : {}]}>
         {placeholder}
       </Animated.Text>
       <View style={styles.inputContainer}>
@@ -91,6 +94,7 @@ const InputComponent = ({
         {props.secureTextEntry && !!text && (
           <View>
             <TouchableOpacity
+              activeOpacity={0.8}
               style={{width: 24}}
               onPress={() => setShowPassword(!showPassword)}>
               {!showPassword ? (
@@ -102,6 +106,7 @@ const InputComponent = ({
           </View>
         )}
       </View>
+      {message && <TextComponent text={message} styles={{}} />}
     </View>
   );
 };
@@ -132,5 +137,10 @@ export const styles = StyleSheet.create({
     height: 40,
     marginTop: 10,
     paddingLeft: 10,
+  },
+  errorText: {
+    marginTop: 5,
+    fontSize: 14,
+    color: 'red',
   },
 });
