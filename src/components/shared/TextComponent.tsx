@@ -20,10 +20,11 @@ interface Props {
     | '800'
     | '900'
     | undefined;
+  onPress?: () => void;
 }
 
 const TextComponent = (props: Props) => {
-  const {text, color, flex, font, size, styles} = props;
+  const {text, color, flex, font, size, styles, onPress} = props;
 
   return (
     <Text
@@ -35,7 +36,8 @@ const TextComponent = (props: Props) => {
           fontWeight: font,
         },
         styles,
-      ]}>
+      ]}
+      onPress={onPress}>
       {text}
     </Text>
   );
