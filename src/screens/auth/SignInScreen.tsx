@@ -64,7 +64,7 @@ const SignInScreen = () => {
           </PrimaryButton>
         </SectionContainer>
 
-        {/* Seccion para colocar inicio de sesión con Google y/o apple */}
+        {/* Sección para colocar inicio de sesión con Google y/o apple */}
         <SectionContainer>
           <RowContainer styles={{paddingVertical: 20}} isCenter>
             <View style={{flex: 1, borderWidth: 0.4}} />
