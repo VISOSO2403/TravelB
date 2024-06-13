@@ -1,11 +1,69 @@
-import {View, Text} from 'react-native';
+import {View, Text, SafeAreaView} from 'react-native';
 import React from 'react';
+import {
+  PrimaryButton,
+  ScreenContainer,
+  SectionContainer,
+  TextComponent,
+  WalletCard,
+} from '../../components';
+import RowContainer from '../../components/containers/RowContainer';
 
 const WalletScreen = () => {
   return (
-    <View>
-      <Text>WalletScreen</Text>
-    </View>
+    <ScreenContainer>
+      <SafeAreaView>
+        <TextComponent
+          text="Métodos de pago"
+          size={30}
+          font="bold"
+          styles={{
+            alignSelf: 'center',
+          }}
+        />
+
+        <SectionContainer>
+          <PrimaryButton onPress={() => {}}>
+            <TextComponent
+              text="Agregar tarjeta"
+              size={20}
+              font="bold"
+              color="white"
+            />
+          </PrimaryButton>
+
+          <PrimaryButton onPress={() => {}}>
+            <TextComponent
+              text="Agregar PayPal"
+              size={20}
+              font="bold"
+              color="white"
+            />
+          </PrimaryButton>
+
+          <PrimaryButton onPress={() => {}}>
+            <TextComponent
+              text="Agregar Google Pay"
+              size={20}
+              font="bold"
+              color="white"
+            />
+          </PrimaryButton>
+        </SectionContainer>
+
+        <SectionContainer>
+          <TextComponent
+            text="Mis tarjetas"
+            size={20}
+            font="bold"
+            styles={{alignSelf: 'center'}}
+          />
+
+          {/* Colar flatlist aquí */}
+          <WalletCard onPress={() => {}} />
+        </SectionContainer>
+      </SafeAreaView>
+    </ScreenContainer>
   );
 };
 
