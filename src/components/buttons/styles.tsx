@@ -5,7 +5,7 @@ export const stylesButton = StyleSheet.create({
     alignItems: 'center',
     borderRadius: 20,
     padding: 10,
-    marginTop: 30,
+    marginVertical: 10,
     backgroundColor: '#491eb4',
   },
   shadow: {
