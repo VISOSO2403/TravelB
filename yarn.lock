@@ -2301,6 +2301,25 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@react-native-community/cli-tools@npm:^13.6.6":
+  version: 13.6.9
+  resolution: "@react-native-community/cli-tools@npm:13.6.9"
+  dependencies:
+    appdirsjs: ^1.2.4
+    chalk: ^4.1.2
+    execa: ^5.0.0
+    find-up: ^5.0.0
+    mime: ^2.4.1
+    node-fetch: ^2.6.0
+    open: ^6.2.0
+    ora: ^5.4.1
+    semver: ^7.5.2
+    shell-quote: ^1.7.3
+    sudo-prompt: ^9.0.0
+  checksum: dc5ee921480a03249b408544146737a0674aa6259d797672a5f369d337a2775ec62fb986fcf62fe554992605305b75a220609db8eea9f6b75d97241a4dd79ad3
+  languageName: node
+  linkType: hard
+
 "@react-native-community/cli-types@npm:13.6.6":
   version: 13.6.6
   resolution: "@react-native-community/cli-types@npm:13.6.6"
@@ -2344,6 +2363,32 @@ __metadata:
     react: ">=16"
     react-native: ">=0.57"
   checksum: 880059020709ce856c448657c2d67a905f2ebcd3f42c1c4d344d732761cb2de98efb600172df5591d943f562393dbca42802e8a903b974aa2b038b441c5718fb
+  languageName: node
+  linkType: hard
+
+"@react-native-vector-icons/common@npm:^0.0.1-alpha.10":
+  version: 0.0.1-alpha.10
+  resolution: "@react-native-vector-icons/common@npm:0.0.1-alpha.10"
+  dependencies:
+    "@react-native-community/cli-tools": ^13.6.6
+    prop-types: ^15.8.1
+    yargs: ^17.7.2
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 961d303fa9c679e5a9b8663c188fc4bed25ad4c94a1da67aa5f93e715e86f1f262c602787e1a72bb1f8f1d9c87818fe605d80d42eecdd504ae1905fc0002a142
+  languageName: node
+  linkType: hard
+
+"@react-native-vector-icons/ionicons@npm:^7.4.0-alpha.15":
+  version: 7.4.0-alpha.15
+  resolution: "@react-native-vector-icons/ionicons@npm:7.4.0-alpha.15"
+  dependencies:
+    "@react-native-vector-icons/common": ^0.0.1-alpha.10
+  peerDependencies:
+    react: "*"
+    react-native: "*"
+  checksum: 025ea892f52dfcabed679b54b6e10cd262a36ae3f6ecd5d535bddfcedc2db0fcedd5d88f9cc8cbfbe1aefb48e71976c49088ae4b289aaf8131b94f8090b81798
   languageName: node
   linkType: hard
 
@@ -3114,6 +3159,8 @@ __metadata:
     "@babel/preset-env": ^7.20.0
     "@babel/runtime": ^7.20.0
     "@react-native-masked-view/masked-view": ^0.3.1
+    "@react-native-vector-icons/common": ^0.0.1-alpha.10
+    "@react-native-vector-icons/ionicons": ^7.4.0-alpha.15
     "@react-native/babel-preset": 0.74.83
     "@react-native/eslint-config": 0.74.83
     "@react-native/metro-config": 0.74.83
@@ -9919,7 +9966,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yargs@npm:^17.3.1, yargs@npm:^17.6.2":
+"yargs@npm:^17.3.1, yargs@npm:^17.6.2, yargs@npm:^17.7.2":
   version: 17.7.2
   resolution: "yargs@npm:17.7.2"
   dependencies:
