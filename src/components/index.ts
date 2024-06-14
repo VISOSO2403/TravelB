@@ -5,6 +5,7 @@ import LogoComponent from "./shared/LogoComponent"
 import TextComponent from "./shared/TextComponent"
 import InputComponent from "./shared/InputComponent"
 import WalletCard from "./cards/WalletCard"
+import IconComponent from "./shared/IconComponent"
 
 export {
   ScreenContainer,
@@ -14,4 +15,5 @@ export {
   TextComponent,
   InputComponent,
   WalletCard,
+  IconComponent
 }
