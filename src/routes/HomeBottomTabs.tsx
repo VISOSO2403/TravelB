@@ -31,6 +31,7 @@ const HomeBottomTabs = () => {
       borderRadius: 16,
       alignItems: 'center',
       justifyContent: 'center',
+      borderColor: 'black',
     },
   };
 
@@ -46,11 +47,11 @@ const HomeBottomTabs = () => {
             <View style={styles.iconContainer}>
               <IconComponent
                 name={focused ? 'map' : 'map-outline'}
-                color={focused ? '#491eb4' : 'gray'}
+                color={focused ? '#f9e75d' : 'gray'}
               />
               <TextComponent
                 text="Inicio"
-                color={focused ? '#491eb4' : 'gray'}
+                color={focused ? 'black' : 'gray'}
                 styles={{marginTop: 4}}
               />
             </View>
@@ -65,11 +66,11 @@ const HomeBottomTabs = () => {
             <View style={styles.iconContainer}>
               <IconComponent
                 name={focused ? 'wallet' : 'wallet-outline'}
-                color={focused ? '#491eb4' : 'gray'}
+                color={focused ? '#f9e75d' : 'gray'}
               />
               <TextComponent
                 text="Cartera"
-                color={focused ? '#491eb4' : 'gray'}
+                color={focused ? 'black' : 'gray'}
                 styles={{marginTop: 4}}
               />
             </View>
@@ -82,7 +83,7 @@ const HomeBottomTabs = () => {
         options={{
           tabBarIcon: ({focused}) => (
             <View style={styles.qrIconContainer}>
-              <IconComponent name="qr-code" color="white" />
+              <IconComponent name="qr-code" color="black" />
             </View>
           ),
         }}
@@ -94,12 +95,12 @@ const HomeBottomTabs = () => {
           tabBarIcon: ({focused}) => (
             <View style={styles.iconContainer}>
               <IconComponent
-                name={focused ? 'timer' : 'timer-outline'}
-                color={focused ? '#491eb4' : 'gray'}
+                name={focused ? 'time' : 'time-outline'}
+                color={focused ? '#f9e75d' : 'gray'}
               />
               <TextComponent
                 text="Historial"
-                color={focused ? '#491eb4' : 'gray'}
+                color={focused ? 'black' : 'gray'}
                 styles={{marginTop: 4}}
               />
             </View>
@@ -114,11 +115,11 @@ const HomeBottomTabs = () => {
             <View style={styles.iconContainer}>
               <IconComponent
                 name={focused ? 'person' : 'person-outline'}
-                color={focused ? '#491eb4' : 'gray'}
+                color={focused ? '#f9e75d' : 'gray'}
               />
               <TextComponent
                 text="Perfil"
-                color={focused ? '#491eb4' : 'gray'}
+                color={focused ? 'black' : 'gray'}
                 styles={{marginTop: 4}}
               />
             </View>
@@ -140,7 +141,7 @@ export const styles = StyleSheet.create({
     height: 56,
     width: 56,
     borderRadius: 999,
-    backgroundColor: '#491eb4',
+    backgroundColor: '#f9e75d',
     marginBottom: Platform.OS === 'ios' ? 20 : 43,
   },
 });

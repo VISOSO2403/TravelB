@@ -6,7 +6,7 @@ export const stylesButton = StyleSheet.create({
     borderRadius: 20,
     padding: 10,
     marginVertical: 10,
-    backgroundColor: '#491eb4',
+    backgroundColor: '#7a5af8',
   },
   shadow: {
     shadowColor: '#000000',
