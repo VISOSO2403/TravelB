@@ -1,4 +1,4 @@
-import {View, Text, StyleSheet, SafeAreaView} from 'react-native';
+import {View, StyleSheet, SafeAreaView} from 'react-native';
 import React, {useEffect} from 'react';
 
 import {
@@ -8,7 +8,8 @@ import {
   useCameraPermission,
   useCodeScanner,
 } from 'react-native-vision-camera';
-import {TextComponent} from '../../components';
+import {IconComponent, TextComponent} from '../../components';
+import {globalStyle} from '../../theme/global.styles';
 
 const CameraScreen = () => {
   const {hasPermission, requestPermission} = useCameraPermission();
@@ -33,15 +34,17 @@ const CameraScreen = () => {
   };
   if (devices == null) {
     return (
-      <View>
-        <TextComponent text="Cámara no encontrada" font="bold" />
-      </View>
+      <SafeAreaView style={styles.noDeviceContainer}>
+        <View style={[styles.noDevice, globalStyle.shadow]}>
+          <IconComponent name="alert-circle-outline" size={50} />
+          <TextComponent text="Cámara no encontrada" font="bold" />
+        </View>
+      </SafeAreaView>
     );
   }
 
   return (
-    <View style={{flex: 1}}>
-      <SafeAreaView />
+    <SafeAreaView style={{flex: 1}}>
       <View style={{top: 30, alignItems: 'center', zIndex: 99}}>
         <TextComponent text="Escanea" size={30} font="bold" />
       </View>
@@ -52,8 +55,25 @@ const CameraScreen = () => {
         isActive={true}
         codeScanner={codeScanner}
       />
-    </View>
+    </SafeAreaView>
   );
 };
 
 export default CameraScreen;
+
+export const styles = StyleSheet.create({
+  noDeviceContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  noDevice: {
+    alignItems: 'center',
+    backgroundColor: 'white',
+    borderRadius: 10,
+    bottom: 20,
+    justifyContent: 'center',
+    height: 200,
+    width: 200,
+  },
+});
