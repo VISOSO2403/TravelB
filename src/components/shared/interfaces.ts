@@ -14,3 +14,9 @@ export interface customIconProps {
   color?: string;
   styles?: StyleProp<ViewStyle>
 }
+
+export interface customIndicatorProps {
+  size: number;
+  color?: string;
+  styles?: StyleProp<ViewStyle>
+}
