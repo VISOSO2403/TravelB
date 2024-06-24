@@ -6,6 +6,17 @@
 	<key>NSCameraUsageDescription</key>
 	<string>$(PRODUCT_NAME) needs access to your Camera.</string>
 
+	<!-- Permisos de ubicacion -->
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+  <string>Necesitamos tu ubicacion para mostrar el mapa</string>
+  <key>NSLocationTemporaryUsageDescriptionDictionary</key>
+  <dict>
+    <key>YOUR-PURPOSE-KEY</key>
+    <string>Necesitamos tu ubicacion para mostrar el mapa</string>
+  </dict>
+  <key>NSLocationWhenInUseUsageDescription</key>
+  <string>Necesitamos tu ubicacion para mostrar el mapa</string>
+
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>

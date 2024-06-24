@@ -24,27 +24,16 @@ const WalletScreen = () => {
 
         <SectionContainer>
           <PrimaryButton onPress={() => {}}>
-            <TextComponent
-              text="Agregar tarjeta"
-              size={20}
-              font="bold"
-              color="white"
-            />
+            <TextComponent text="Agregar tarjeta" font="bold" color="white" />
           </PrimaryButton>
 
           <PrimaryButton onPress={() => {}}>
-            <TextComponent
-              text="Agregar PayPal"
-              size={20}
-              font="bold"
-              color="white"
-            />
+            <TextComponent text="Agregar PayPal" font="bold" color="white" />
           </PrimaryButton>
 
           <PrimaryButton onPress={() => {}}>
             <TextComponent
               text="Agregar Google Pay"
-              size={20}
               font="bold"
               color="white"
             />

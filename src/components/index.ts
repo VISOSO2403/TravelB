@@ -6,6 +6,10 @@ import TextComponent from "./shared/TextComponent"
 import InputComponent from "./shared/InputComponent"
 import WalletCard from "./cards/WalletCard"
 import IconComponent from "./shared/IconComponent"
+import MapComponent from "./shared/MapComponent"
+import FabComponent from "./buttons/FabComponent"
+import LoadingComponent from "./shared/LoadingComponent"
+
 
 export {
   ScreenContainer,
@@ -15,5 +19,8 @@ export {
   TextComponent,
   InputComponent,
   WalletCard,
-  IconComponent
+  IconComponent,
+  MapComponent,
+  FabComponent,
+  LoadingComponent
 }
