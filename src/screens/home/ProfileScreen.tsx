@@ -136,17 +136,16 @@ const ProfileScreen = () => {
             </TouchableOpacity>
           </SectionContainer>
 
-          <SectionContainer>
-            <PrimaryButton onPress={() => {}}>
-              <TextComponent text="Cerrar sesión" font="bold" color="white" />
-            </PrimaryButton>
-
-            <PrimaryButton onPress={() => {}}>
-              <TextComponent text="Eliminar cuenta" font="bold" color="black" />
-            </PrimaryButton>
-          </SectionContainer>
+          <RowContainer styles={{marginVertical: 40, paddingHorizontal: 16}}>
+            <TouchableOpacity>
+              <TextComponent text="Cerrar sesión" font="bold" color="black" />
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <TextComponent text="Eliminar cuenta" font="bold" color="red" />
+            </TouchableOpacity>
+          </RowContainer>
         </SafeAreaView>
-        <View style={{height: 100}} />
+        <View style={{height: 120}} />
       </ScrollView>
     </ScreenContainer>
   );
